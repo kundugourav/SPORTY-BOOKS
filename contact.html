@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SPORTY-BOOKS ECOMMERCE</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+
+  <body>
+
+    <!-- BRAND SECTION -->
+    <nav>
+      <div id="brand" class="brand">
+        <ul>
+          <li class="search">
+            <input type="text" name="" id="" placeholder="search here.....">
+            <button>Search</button>
+            <a href="index.html" onclick="logout()"> Log Out</a>
+          </li>
+          <li class="image"><a href=""><img src="images/sb.jpg" alt="icon" title="SOPRTY-BOOKS"></a></li>
+          <li class="brand-name"><a href=""> SPORTY-BOOKS ECOMMERCE</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MENU SECTION -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="sports.html"><li>SPORTS</li></a>
+          <a href="books.html"><li>BOOKS</li></a>
+          <a href="about.html"><li>ABOUT US</li></a>
+          <a href="contact.html" class="active"><li>CONTACT US</li></a>
+          
+        </ul>
+      </div>
+    </nav>
+
+  
+
+    
+    <!-- FORM SECTION -->
+    <section class="outer-sec">
+      <div class="heading"><h1>Contact Us</h1></div>
+
+      <div class="contact">
+
+          <div class="column">
+            <form action="">
+
+              <div class="row">
+              <label for="fname">Full Name :</label>
+              <input type="text" id="fname" name="fullname" placeholder="Name" style="width: 500px; height:30px;font-size: 20px;padding-left:10px;" required>
+              </div>
+
+              <div class="row">
+              <label for="phone">Phone No. :</label>
+              <input type="text" id="phone" name="phonenumber" maxlength="10" minlength="10" placeholder="Number" style="width: 500px; height:30px;font-size: 20px;padding-left:10px;" required>
+              </div>
+
+              <div class="row">
+              <label for="email">E-mail :</label>
+              <input type="email" id="email" name="mail" placeholder="Mail" style="width: 500px; height:30px;font-size: 20px;padding-left:10px;" required>
+              </div>
+
+              <div class="row">
+              <label for="country">Country :</label>
+              <input type="text" id="country" name="country" placeholder="Country" style="width: 500px; height:30px;font-size: 20px;padding-left:10px;" required>
+              </div>
+
+              <div class="row">
+              <label for="query">Question :</label>
+              <textarea name="query" id="query" cols="30" rows="10" style="width: 500px;font-size: 20px;padding:5px 10px;" placeholder="Query" minlength="20" required></textarea>
+              </div>
+
+              <div class="row"><input id="sub" type="submit" value="Submit" class="btn"></div>
+
+            </form>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- ADDRESS -->
+    <section class="address-section">
+      <div class="addr">
+        <h2> Office Address : 39B Dr. Suresh Sarkar Road. Kolkata, West Bengal. PIN - 700014</h2>
+      </div>
+      <div class="addr">
+        <h2>Customer Care : (033) 1800 345 1300</h2>
+      </div>
+      <div class="addr">
+        <h2>For more info : info@sportybooks.com</h2>
+      </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <section>
+      <div class="footer">
+        Copyright © 2020 SPORTY-BOOKS Pvt Ltd , India . All rights Reserved <br>
+        mail us @ - contact@sportybooks.com <br>
+        call us at - (+91) 9563245116 <br>
+        <a href="#brand">Click Here</a> to go to top of this page
+      </div>
+    </section>
+  
+  <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<script>
+
+
+var sub = document.getElementById("sub");
+
+sub.onclick = function(){
+  var emailid = document.getElementById("email").value;
+  var country = document.getElementById("country").value;
+  var name = document.getElementById("fname").value;
+  var number = document.getElementById("phone").value;
+  var query = document.getElementById("query").value;
+
+  if(name.length==0){
+    alert("all fields are necessary\nenter name");
+  }
+  else if(number.length!=10){
+    alert("all fields are necessary\nenter number");
+  }
+  else if(emailid.length==0){
+    alert("all fields are necessary\nenter email id");
+  }
+  else if(country.length==0){
+     alert("all fields are necessary\nenter country");
+  }
+  else if(query.length==0){
+    alert("all fields are necessary\nenter query");
+  }
+  else{
+    alert("thank you for contacting us");
+    location.reload();
+  }
+  
+}
+
+
+</script>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SPORTY-BOOKS ECOMMERCE</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+  <body>
+
+
+
+    <!-- The sign up Modal -->
+    <div id="sign-myModal" class="sign-modal">
+      <!-- Modal content -->
+      <div class="sign-modal-content">
+        <span class="sign-close">&times;</span>
+        <center><h2 style="margin-top:5px;margin-bottom:5px;">Sign Up</h2></center>
+        <form action="">
+          <div>
+            <label for="name">Name : </label><br>
+            <input id="name" type="text" required>
+          </div>
+          <div>
+            <label for="emailid">Email Id : </label><br>
+            <input id="emailid" type="email" required>
+          </div>
+          <div>
+            <label for="password">Password : </label><br>
+            <input id="password" type="password" required>
+          </div>
+          <div>
+            <label for="number">Phone No. : </label><br>
+            <input minlength="10" maxlength="10" id="number" type="text" required>
+          </div>
+          <div>
+            <label for="address">Address : </label><br>
+            <input id="address" type="text" required>
+          </div>
+          <div>
+            <button id="scancel" class="scancel">Cancel</button>
+            <button id="signup" class="signup" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <!-- The login Modal -->
+    <div id="login-myModal" class="login-modal">
+      <!-- Modal content -->
+      <div class="login-modal-content">
+        
+        <span class="login-close">&times;</span>
+        <center><h2 style="margin:10px;">Log In</h2></center>
+        <form action="">
+        <div>
+        <label for="email">E-mail Id : </label>
+        <input id="email" type="email" required>
+        </div>
+        <div>
+        <label for="pass">Password : </label>
+        <input id="pass" type="password" required>
+        </div>
+        <div>
+        <button id="cancel" class="cancel">Cancel</button>
+        <button id="login" class="login" type="submit">Login</button>
+        </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <!-- HEADER SECTION -->
+    <nav>
+      <div id="header" class="header">
+        <ul>
+          <li><a id="login-myBtn" href="#"> Log In</a></li>
+          <li><a id="sign-myBtn" href="#">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BRAND SECTION -->
+    <nav>
+      <div class="brand">
+        <ul>
+          <li class="search">
+            <input type="text" name="" id="" placeholder="search here.....">
+            <button>Search</button>
+          </li>
+          <li class="image"><a href=""><img src="images/sb.jpg" alt="icon" title="SOPRTY-BOOKS"></a></li>
+          <li class="brand-name"><a href=""> SPORTY-BOOKS ECOMMERCE</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MENU SECTION -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <a href="index.html" class="active"><li>HOME</li></a>
+          <a href="sports.html"><li>SPORTS</li></a>
+          <a href="books.html"><li>BOOKS</li></a>
+          
+          <a href="about.html"><li>ABOUT US</li></a>
+          <a href="contact.html"><li>CONTACT US</li></a>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <!-- GALLERY SECTION START-->
+    
+      <div class="slider">
+        <div class="slider-items">
+
+          <div class="item active-img">
+            <img src="images/img7.jpg" alt="">
+            <div class="caption">
+              Shop Sports Items Here
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/img6.jpg" alt="">
+            <div class="caption">
+              Shop Books Here
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/img1.jpg" alt="">
+            <div class="caption">
+              Go out and play
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/img4.jpg" alt="">
+            <div class="caption">
+              Books are best source of knowledge
+            </div>
+          </div>
+
+        </div>
+
+        <div class="left-slide">&lt;</div>
+        <div class="right-slide">&gt;</div>
+
+      </div>
+
+    <!-- GALLERY SECTION END-->
+
+
+
+
+    <!-- CATEGORIES SECTION -->
+    <section>
+      <div class="categories">
+        <div class="sports">
+          <h2>Sports</h2>
+          <img src="images/sports.jpg" alt="">
+          <a href="sports.html"><button>Shop Now</button></a>
+        </div>
+        <div class="books">
+          <h2>Books</h2>
+          <img src="images/book.png" alt="">
+          <a href="books.html"><button>Shop Now</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section>
+      <div class="footer">
+        Copyright © 2020 SPORTY-BOOKS Pvt Ltd , India . All rights Reserved <br>
+        mail us @ - contact@sportybooks.com <br>
+        call us at - (+91) 9563245116 <br>
+        <a href="#header">Click Here</a> to go to top of this page
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<script>
+
+
+var slides=document.querySelector(".slider-items").children;
+var nextSlide=document.querySelector(".right-slide");
+var prevSlide=document.querySelector(".left-slide");
+var totalSlides=slides.length;
+var index=0;
+
+nextSlide.onclick=function () {
+     next("next");
+}
+prevSlide.onclick=function () {
+     next("prev");
+}
+
+function next(direction){
+
+   if(direction=="next"){
+      index++;
+       if(index==totalSlides){
+        index=0;
+       }
+   } 
+   else{
+        if(index==0){
+        index=totalSlides-1;
+        }
+        else{
+        index--;
+        }
+    }
+
+  for(i=0;i<slides.length;i++){
+          slides[i].classList.remove("active-img");
+  }
+  slides[index].classList.add("active-img");     
+
+}
+
+
+
+
+
+
+//              SIGN UP SCRIPT START HERE
+
+
+
+var smodal = document.getElementById("sign-myModal");
+
+
+var sbtn = document.getElementById("sign-myBtn");
+
+var sspan = document.getElementsByClassName("sign-close")[0];
+
+
+sbtn.onclick = function() {
+  smodal.style.display = "block";
+}
+
+
+sspan.onclick = function() {
+  smodal.style.display = "none";
+}
+
+
+
+
+var scancel = document.getElementById("scancel");
+
+scancel.onclick = function(){
+  smodal.style.display = "none";
+}
+
+
+var signup = document.getElementById("signup");
+
+
+signup.onclick = function(){
+  var emailid = document.getElementById("emailid").value;
+  var password = document.getElementById("password").value;
+  var name = document.getElementById("name").value;
+  var number = document.getElementById("number").value;
+  var address = document.getElementById("address").value;
+
+  if(name.length==0){
+    alert("enter name");
+  }
+  else if(emailid.length==0){
+    alert("enter email id");
+  }
+  else if(password.length==0){
+    alert("enter password");
+  }
+  else if(number.length!=10){
+    alert("enter 10 digit phone number");
+  }
+  else if(address.length==0){
+     alert("enter address");
+  }
+  else{
+    alert("signup successful");
+    location.reload();
+  }
+  
+}
+
+
+
+
+
+
+
+
+//              LOGIN SCRIPT START HERE
+
+var lmodal = document.getElementById("login-myModal");
+
+var lbtn = document.getElementById("login-myBtn");
+
+var lspan = document.getElementsByClassName("login-close")[0];
+
+lbtn.onclick = function() {
+  lmodal.style.display = "block";
+}
+
+
+lspan.onclick = function() {
+  lmodal.style.display = "none";
+}
+
+
+
+var cancel = document.getElementById("cancel");
+
+cancel.onclick = function(){
+  lmodal.style.display = "none";
+}
+
+
+var login = document.getElementById("login");
+
+
+login.onclick = function(){
+  var email = document.getElementById("email").value;
+  var pass = document.getElementById("pass").value;
+  if(email.length==0){
+    alert("enter email id");
+  }
+  else if(pass.length==0){
+    alert("enter password");
+  }
+  else{
+    alert("login successful");
+    location.reload();
+  }
+  
+}
+
+
+window.onclick = function(event) {
+  if (event.target == smodal) {
+    smodal.style.display = "none";
+  }
+  else if (event.target == lmodal) {
+    lmodal.style.display = "none";
+  }
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+

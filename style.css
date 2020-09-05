@@ -1,0 +1,658 @@
+body{
+  background-color:#f6f6f6;
+  margin: 1px;
+}
+.active{
+  background-color: #07689f;
+  color: white;
+  border: 2px solid #204051;
+}
+nav .header{
+  width: 99.9%;
+  height: 60px;
+  background-color: #1b262c;
+  vertical-align: middle;
+}
+nav .header ul{
+  height: 40px;
+  margin: auto;
+  padding: 10px 20px;
+  width: 90%;
+}
+nav .header ul li, nav .brand ul li{
+  padding: 10px 20px;
+  float: right;
+  list-style-type: none;
+}
+.header ul li a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+nav .brand{
+  margin-top: 1px;
+  width: suto;
+  height: 80px;
+  background-color: #1f4068;
+}
+nav .brand ul{
+  height: 56px;
+  margin: auto;
+  padding: 10px 20px;
+  width: auto;
+}
+nav .brand ul .search a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 0px 30px 0px 40px;
+  vertical-align: middle;
+}
+nav .brand ul .image img{
+  border-radius: 10px;
+  height: 56px;
+  width: 56px;
+}
+nav .brand ul .image {
+  float: left;
+  padding: 0px 10px;
+  margin-left: 20px;
+}
+nav .brand ul .brand-name a{
+  text-decoration: none;
+  color: white;
+}
+nav .brand ul .brand-name{
+  float: left;
+  margin: 3px;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav .brand ul .search input{
+  border: 1px solid black;
+  padding: 6px;
+  font-size: 18px;
+  margin: 0px 3px;
+}
+nav .brand ul .search button{
+  border: 1px solid black;
+  padding: 6px 12px;
+  font-size: 18px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+nav .menu{
+  margin-top: 2px;
+  width: 100%;
+  height: 60px;
+  background-color: #1b262c;
+}
+nav .menu ul{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+nav .menu ul a{
+  width: auto;
+  padding: 18px 50px;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  border: 2px solid #1b262c;
+}
+.menu ul a{
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+.menu ul a:hover{
+  background-color: #07689f;
+  border: 2px solid #bec8ce;
+}
+
+.slider{
+  width: 90%;
+  margin: 80px auto;
+  position: relative;
+}
+.slider .left-slide,.slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #444444;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  top: 50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+}
+.slider .left-slide:hover,.slider .right-slide:hover{
+  background-color: #2095d8;
+}
+.slider .left-slide{
+  left: 30px;
+}
+.slider .right-slide{
+  right: 30px;
+}
+.slider .slider-items .item img{
+  width: 100%;
+  height: 550px;
+  display: block;
+}
+.slider .slider-items .item{
+  display: none;
+  position: relative;
+}
+.slider .slider-items .item .caption{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+.slider .slider-items .item.active-img{
+  display: block;
+}
+
+
+section .categories{
+  width: auto;
+  height: 800px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+section .categories .sports{
+  float: left;
+  width: 40%;
+  border: 2px solid gray;
+  margin: 30px 50px;
+  text-align: center;
+}
+section .categories .books{
+  margin: 30px 50px;
+  float: right;
+  width: 40%;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1440px){
+
+section .categories{
+  width: auto;
+  height: 650px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section .categories .sports{
+  float: left;
+  width: 40%;
+  border: 2px solid gray;
+  margin: 30px 50px;
+  margin-right: 0px;
+  text-align: center;
+}
+section .categories .books{
+  margin: 30px 50px;
+  margin-left: 0px;
+  float: right;
+  width: 40%;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+section .categories .sports img, section .categories .books img{
+  max-width:420px;
+  max-height: 430px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
+} 
+
+
+section .categories .sports img, section .categories .books img{
+  width:auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
+section .categories .sports a button, section .categories .books a button{
+  width: 80%;
+  font-size: 20px;
+  background-color: #07689f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px 15px;
+}
+section .categories .sports button:active, section .categories .books button:active{
+  background-color: #40a8c4;
+  color: #393e46;
+  font-weight: bold;
+}
+
+section .footer{
+  margin: 2px 1px;
+  padding: 10px;
+  background-color: #1b262c;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+section .footer a{
+  text-decoration: none;
+  color: white;
+}
+section .company{
+  margin: 10px;
+  padding: 19px;
+  border: 2px solid black;
+  width: 96%;
+  background-color: #d6e0f0;
+  height: auto;
+}
+section .company p{
+  font-size: 20px;
+  padding-left: 25px;
+  line-height: 25px;
+}
+.outer-mem {
+  margin-bottom: 40px;
+  height: 600px;
+}
+.outer-mem .members-profile{
+  margin: 10px 0px 30px 0px;
+  height: 100%;
+}
+.outer-mem .members-profile .member1,.outer-mem  .members-profile .member2{
+  float: left;
+  margin: 10px;
+  width: 42%;
+  height: 100%;
+  background-color: #d6e0f0;
+  border: 2px solid black;
+  justify-content: center;
+}
+.outer-mem .members-profile .member1{
+  margin-left: 45px;
+}
+.outer-mem .members-profile .member2{
+  background-color: #d6e0f0;
+  float: right;
+  margin-right: 45px;
+}
+.outer-mem .members-profile .member1 .holder,.outer-mem .members-profile .member2 .holder{
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+}
+.outer-mem .members-profile .member1 .holder img,.outer-mem .members-profile .member2 .holder img{
+  height: 275px;
+  width: 275px;
+  border-radius: 100%;
+}
+.outer-mem .members-profile .member1 center .holder h3,.outer-mem .members-profile .member2 center .holder h3{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.outer-mem .members-profile .member1 center .holder h5,.outer-mem .members-profile .member2 center .holder h5{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5em;
+}
+.outer-mem .members-profile .member1 p,.outer-mem .members-profile .member2 p{
+  padding: 0px 25px;
+  font-size: 17px;
+}
+
+section .heading h1{
+  text-align: center;
+  padding-top: 35px;
+  font-size: 40px;
+}
+
+section .contact{
+  margin: 20px;
+  padding:0% 30%;
+}
+section .contact .column{
+  text-align: left;
+}
+section .contact .column form .row{
+  margin: 20px;
+  font-size: 25px;
+}
+.outer-sec{
+  margin-top: -33.2px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+}
+.outer-sec .contact .column form .row .btn{
+  padding: 8px 15px;
+  font-size: 20px;
+  background-color: #07689f;
+  color: white;
+  border-radius: 8px;
+}
+.outer-sec .contact .column form .row .btn:hover{
+  background-color: #3282b8;
+  cursor: pointer;
+}
+.outer-sec .contact .column form .row .btn:active{
+  background-color: #07689f;
+  cursor: pointer;
+}
+
+
+section .all-sports{
+  margin: 2px;
+  height: 150vh;
+}
+section .all-sports .sp-rows{
+  margin: 5px;
+  padding: 10px;
+}
+section .all-sports .sp-rows .sp-columns{
+  float: left;
+  border-radius: 3px;
+  padding: 20px 20px;
+  height: 90%;
+  margin: 25px 15px;
+  border: 2px solid black;
+  width: 20%;
+  text-align: center;
+  background-color: #f1f3f8;
+}
+
+@media(min-width: 1200px) and (max-width: 1460px){
+  section .all-sports{
+  margin: 2px;
+  height: 230vh;
+  margin-bottom: 0px;
+}
+  section .all-sports .sp-rows .sp-columns{
+  float: left;
+  border-radius: 3px;
+  padding: 20px 10px;
+  height: 90%;
+  margin: 25px 15px;
+  border: 2px solid black;
+  width: 27%;
+  text-align: center;
+  background-color: #f1f3f8;
+}
+section .all-sports .sp-rows .books img{
+  height: 250px;
+  width: 250px;
+}
+} 
+
+
+@media(min-width: 1461px) and (max-width: 1535px){
+  section .all-sports{
+  margin: 2px;
+  height: 230vh;
+  margin-bottom: 0px;
+}
+section .all-sports .sp-rows .books img{
+  height: 250px;
+  width: 250px;
+}
+  section .all-sports .sp-rows .sp-columns{
+  float: left;
+  border-radius: 3px;
+  padding: 20px 10px;
+  height: 90%;
+  margin: 25px 15px;
+  border: 2px solid black;
+  width: 29%;
+  text-align: center;
+  background-color: #f1f3f8;
+}
+} 
+
+section .all-sports .sp-rows .sp-columns:hover{
+  margin: 20px 10px;
+  border-radius: 8px;
+  padding: 25px 25px;
+  color: #07689f;
+}
+section .all-sports .sp-rows .sp-columns img{
+  height: 250px;
+  width: 250px;
+}
+section .all-sports .sp-rows .sp-columns .btn{
+  padding: 10px 90px;
+  font-size: 20px;
+  background-color: #07689f;
+  color: white;
+  border-radius: 8px;
+}
+section .all-sports .sp-rows .sp-columns .btn:hover{
+  padding: 10px 94px;
+  background-color: #3282b8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+section .all-sports .sp-rows .sp-columns .btn:active{
+  padding: 10px 94px;
+  background-color: #07689f;
+  border-radius: 8px;
+}
+section .all-sports .sp-rows .books img{
+  height: 275px;
+  width: 250px;
+}
+
+.modal1,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.bmodal1,.bmodal2,.bmodal3,.bmodal4,.bmodal5,.bmodal6,.bmodal7,.bmodal8 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content1 ,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  height: 70%;
+}
+
+.bmodal-content1 ,.bmodal-content2,.bmodal-content3,.bmodal-content4,.bmodal-content5,.bmodal-content6,.bmodal-content7,.bmodal-content8{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  height: 75%;
+}
+
+.close1 ,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.bclose1,.bclose2,.bclose3,.bclose4,.bclose5,.bclose6,.bclose7,.bclose8,.sign-close,.login-close{
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,.close1:focus,.close2:hover,.close2:focus,.close3:hover,.close3:focus,.close4:hover,.close4:focus,.close5:hover,.close5:focus,.close6:hover,.close6:focus,.close7:hover,.close7:focus,.close8:hover,.close8:focus,.bclose1:hover,.bclose1:focus,.bclose2:hover,.bclose2:focus,.bclose3:hover,.bclose3:focus,.bclose4:hover,.bclose4:focus,.bclose4:hover,.bclose5:focus,.bclose6:hover,.bclose6:focus,.bclose7:hover,.bclose7:focus,.bclose8:hover,.bclose8:focus,.sign-close:hover,.sign-close:focus,.login-close:hover,.login-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-col1 img{
+  height: 250px;
+  width: 250px;
+}
+
+.bmodal-col1 img{
+  height: 275px;
+  width: 250px;
+}
+.modal-col1{
+  text-align: center;
+  width: 35%;
+  padding-top: 40px;
+  height: 90%;
+  border-radius: 5px;
+  float: left;
+  border: 2px solid black;
+}
+.modal-col1 button{
+  font-size: 20px;
+  color: white;
+  background-color: #07689f;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-col1 button:hover{
+  background-color: #3282b8;
+}
+.modal-col2{
+  width: 60%;
+  float: right;
+}
+.modal-col2 h4,.modal-col2 p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.modal-col2 ul li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sign-modal,.login-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.8); 
+}
+
+
+.sign-modal-content {
+  background-color: #C0C0C0;
+  margin: 8% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+}
+
+.sign-modal-content form div{
+  padding: 10px 50px;
+  width: 620px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sign-modal-content form div input{
+  font-size: 22px;
+  width: 98%;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1440px){
+  .sign-modal-content form div{
+  padding: 10px 15px;
+  width: 95%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sign-modal-content form div input{
+  font-size: 22px;
+  width: 99%;
+}
+
+}
+
+.login-modal-content{
+  font-size: 20px;
+  text-align: left;
+  line-height: 50px;
+  background-color: #C0C0C0;
+  margin: 12% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; 
+}
+.login-modal-content form div{
+  font-weight: bold;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.login-modal-content form div input{
+  font-size: 20px;
+}
+.login-modal-content form div .cancel,.sign-modal-content form div .scancel{
+  margin-right: 70px;
+  background-color: #e92019;
+  padding: 8px 20px;
+  color:white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.login-modal-content form div .login,.sign-modal-content form div .signup{
+  margin-left: 70px;
+  background-color:#32CD32;
+  padding: 8px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.sign-modal-content form div .signup{
+  float: right;
+}
+.login-modal-content form div .login:hover,.sign-modal-content form div .signup:hover{
+  background-color: rgb(41, 243, 41);
+}
+.login-modal-content form div .cancel:hover,.sign-modal-content form div .scancel:hover{
+  background-color:  #f34741;
+}
+.address-section .addr {
+  margin: 20px;
+  text-align: center;
+}
+.address-section{
+  background-color: #e0ece4;
+  padding: 40px;
+}

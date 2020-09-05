@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SPORTY-BOOKS ECOMMERCE</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+
+  <body>
+
+    <!-- BRAND SECTION -->
+    <nav>
+      <div id="brand" class="brand">
+        <ul>
+          <li class="search">
+            <input type="text" name="" id="" placeholder="search here.....">
+            <button>Search</button>
+            <a href="index.html" onclick="logout()"> Log Out</a>
+          </li>
+          <li class="image"><a href=""><img src="images/sb.jpg" alt="icon" title="SOPRTY-BOOKS"></a></li>
+          <li class="brand-name"><a href=""> SPORTY-BOOKS ECOMMERCE</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MENU SECTION -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="sports.html"><li>SPORTS</li></a>
+          <a href="books.html" class="active"><li>BOOKS</li></a>
+          <a href="about.html"><li>ABOUT US</li></a>
+          <a href="contact.html"><li>CONTACT US</li></a>
+          
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <!-- The Modal 1 -->
+    <div id="bmyModal1" class="bmodal1">
+      <div class="bmodal-content1">
+        <span class="bclose1">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books1.jpeg" alt="">
+          <h3>HIMALAYAN BLUNDER</h3>
+            <h3>Price - ₹299</h3>
+            <h5>Brig J P Dalvi | Natraj Publishers | History</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <h4>Summary Of The Book</h4>
+          <p>Himalayan Blunder: The Angry Truth About India’s Most Crushing Military Disaster documents the reasons and after-effects of the Sino-Indian War in 1962, which resulted in India’s defeat to the Chinese People’s Liberation Army. This book starts off with Dalvi telling the readers about his time at DSSC, Wellington. One day, a guest faculty, who was a retired British official, stopped the class suddenly and told his students that they would need to fight for their country during the India-China war. The retired official gained top secret information about the fact that Nehru signed the Panchsheel agreement with China, giving up the post in Tibet, which was maintained by the British to keep a tab on Chinese advance.
+Dalvi was angered greatly by the gentleman’s criticism of his country’s leader, Nehru. Dalvi goes on to explain that the British had top-secret information about China’s imperial ambitions, making them utilize Tibet as a buffer state. The Chinese slowly captured Tibet in 1950, and India didn’t condemn the attack, because of Nehru’s China-friendly policy. The Chinese started building roads to Aksai Chin from Tibet. On 8th September, 1962, the war between India and China broke out, with Nehru being away from India. Dalvi was appointed the Commander of the 7th Infantry Brigade in the North-East Frontier Agency.</p>
+          <h4>About J. P. Dalvi</h4>
+          <p>J. P. Dalvi was an author and commander.
+
+Dalvi was born on 3rd July, 1920. His father worked with the British administration in Iraq and Dalvi returned to India in 1923. He completed his schooling from St. Mary’s High School, Mumbai. Dalvi then went on to study at St. Xavier’s College, Mumbai, under the Jesuits. Dalvi joined the Indian Army in 1940, when the Second World War broke out. Dalvi served as the Commander of the Indian 7th Brigade, which was destroyed during the 1962 Sino-Indian War. He was apprehended by the PLA on 22nd October, 1962, after which he was repatriated in 1963. Dalvi passed away in 1980, due to Cancer.</p>
+          
+        </div>
+      </div>
+
+    </div>
+
+
+  <!-- The Modal 2 -->
+    <div id="bmyModal2" class="bmodal2">
+      <div class="bmodal-content2">
+        <span class="bclose2">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books2.jpeg" alt="">
+          <h3>PROGRAMMING WITH JAVA</h3>
+            <h3>Price - ₹470</h3>
+            <h5>Balagurusamy | McGraw Hill India | Programming</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <p>Programming with JAVA 5th Edition, authored by E. Balagurusamy, is a text that explains the fundamentals to core concepts of Java. It is essential for those pursuing the first level programming course in Java.
+About McGraw Hill Education
+McGraw Hill Education is a provider of educational books. They have marketed books on education content like 1000 Plus Questions on Indian Polity: General Studies for Civil Services Preliminary Examination (Paper - 1) 1st Edition, UGC NET PAPER I 1st Edition, JEE Main 2013: Mathematics Crash Course 1st Edition, and JEE Main 2013: Chemistry Crash Course 1st Edition.
+McGraw Hill Education was founded in 1970. They have since been providers of books, in both printed and digital format, for the purpose of education and higher learning.</p>
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<!-- The Modal 3 -->
+    <div id="bmyModal3" class="bmodal3">
+      <div class="bmodal-content3">
+        <span class="bclose3">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books3.jpeg" alt="">
+          <h3>THE 5 AM CLUB</h3>
+            <h3>Price - ₹222</h3>
+            <h5>Robin Sharma | Jaico Publishing | Economics</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <h4>About the Book</h4>
+          <p>Robin Sharma who is a legendary leadership and elite performance expert introduced the 5 AM club concept over twenty years ago. This is based on a morning routine that has helped his clients maximize their productivity, improve their health and bulletproof their serenity in this age of overwhelming complexity. This life-changing book has been crafted by Robin Sharma over a rigorous four-year period. Through this book, you will discover the benefits of adopting an early-rising habit. It has positively altered the lives of so many by helping them be more helpful and feel more happy and alive.</p>
+          <h4>About the Author</h4>
+          <p>Robin Sharma is a Canadian writer who is known for his work, The Monk Who Sold His Ferrari. Until the age of 25, Sharma worked as a litigation lawyer. In 1994, he self-published a book named MegaLiving. This book dealt with how one could cope stress with effective management and spirituality. He had initially self-published his most famous work, The Monk Who Sold His Ferrari. Eventually, HarperCollins picked it up for wider distribution.</p>
+          
+          <h2>Specification</h2>
+          <ul>
+            <li>Imprint - Jaico Publishing House</li>
+<li>Publication Year - December</li>
+<li>Number of Pages - 336</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- The Modal 4 -->
+    <div id="bmyModal4" class="bmodal4">
+      <div class="bmodal-content4">
+        <span class="bclose4">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books4.jpeg" alt="">
+          <h3>MAKING OF ATOMMIC BOMB</h3>
+            <h3>Price - ₹999</h3>
+            <h5>Richard Rhodes | Simon & Schuster | History</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <p>With a brand new introduction from the author, this is the complete story of how the bomb was developed. It is told in rich, human, political, and scientific detail, from the turn-of-the-century discovery of the vast energy locked inside the atom to the dropping of the first bombs on Japan. Few great discoveries have evolved so swiftly -- or have been so misunderstood. From the theoretical discussions of nuclear energy to the bright glare of Trinity there was a span of hardly more than twenty-five years. What began as merely an interesting speculative problem in physics grew into the Manhattan Project, and then into the Bomb with frightening rapidity, while scientists known only to their peers -- Szilard, Teller, Oppenheimer, Bohr, Meitner, Fermi, Lawrence, and yon Neumann -- stepped from their ivory towers into the limelight. Richard Rhodes takes us on that journey step by step, minute by minute, and gives us the definitive story of man's most awesome discovery and invention.</p>
+          
+          <h2>Dimensions</h2>
+          <ul>
+            
+<li>Height - 234 mm</li>
+<li>Length - 153 mm</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+<!-- The Modal 5 -->
+    <div id="bmyModal5" class="bmodal5">
+      <div class="bmodal-content5">
+        <span class="bclose5">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books5.jpeg" alt="">
+          <h3>LET US PYTHON</h3>
+            <h3>Price - ₹499</h3>
+            <h5>Kanetkar | BPB Publishers | Programming</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <p>Book for python programming. Anyone can buy this book who want to learn python programming language. Python is one of the most used language in the programming world. You can buy it read it and gain maximum out of it.</p>
+          
+          <h2>Specification</h2>
+          <ul>
+            <li>Language: English</li>
+<li>Binding: Paperback</li>
+<li>Publisher: BPB Publications</li>
+<li>Genre: Computers</li>
+<li>ISBN: 9789388511568, 9789388511568</li>
+<li>Pages: 256</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- The Modal 6 -->
+    <div id="bmyModal6" class="bmodal6">
+      <div class="bmodal-content6">
+        <span class="bclose6">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books6.jpeg" alt="">
+          <h3>ATTITUDE IS EVERYTHING</h3>
+            <h3>Price - ₹209</h3>
+            <h5>Jeff Keller | BPB House | Human Character</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <h4>About the Book</h4>
+          <p>Attitude decides our altitude and when we change your attitude, we change your life. Attitude is Everything: Change Your Attitude...Change Your Life is a success manual that gives plans for us to take control of our lives and unleash the untapped potential. This book consists of 12 Lessons that cover a wide range of topics like paving one’s path, making commitments to oneself, confronting fears, etc.</p>
+          <h4>About the Author</h4>
+          <p>Jeff Keller is a speaker, seminar leader, and writer in the area of motivation and human potential. He delivers his motivational presentations to businesses, associations as well as educational institutions. Jeff is also an attorney who practised law for more than ten years before pursuing a full-time career as an inspirational speaker and writer. </p>
+
+          <h2>Dimensions</h2>
+          <ul>
+            
+<li>Height - 215 mm</li>
+<li>Length - 140 mm</li>
+<li>Weight - 225 gr</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- The Modal 7 -->
+    <div id="bmyModal7" class="bmodal7">
+      <div class="bmodal-content7">
+        <span class="bclose7">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books7.jpeg" alt="">
+          <h3>GEOGRAPHY OF INDIA</h3>
+            <h3>Price - ₹749</h3>
+            <h5>Majid Husain | McGraw Hill India | Geography</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <p>The book Geography of India, 8th edition is written mainly for candidates preparing for Competitive Examinations. It’s a widely read reference book that deals with relevant topics of India’s Geographical landscape in a systematic and comprehensive manner. Updated topics, current events and statistics forms a part of this edition like, Resources of India, different types of irrigation, cropping patterns of India, Transport and public distribution system and food security, disasters and Government initiatives.</p>
+          <h2>Specification</h2>
+          <ul>
+            <li> Author - Majid Husain, Manohar Pandey</li>
+<li> Binding - Paperback</li>
+<li> Publishing Date - 2019</li>
+<li> Publisher - Mac Graw Hill Education</li>
+<li> Edition - 2019</li>
+<li> Exam - IAS Exam Prelims And Mains Exam,PSC ,UPSC PRELIMS AND MAINS BOOK</li>
+<li> Standard - IAS Exam Prelims And Mains Exam,PSC ,UPSC PRELIMS AND MAINS BOOK</li>
+<li> Number of Pages - 1030</li>
+<li> Language - English</li>
+<li> Subject - IAS Exam Prelims And Mains Exam,PSC ,UPSC PRELIMS AND MAINS BOOK</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- The Modal 8 -->
+    <div id="bmyModal8" class="bmodal8">
+      <div class="bmodal-content8">
+        <span class="bclose8">&times;</span>
+        <div class="modal-col1 bmodal-col1">
+          <img src="images/books/books8.jpeg" alt="">
+          <h3>WORD POWER MADE EASY</h3>
+            <h3>Price - ₹166</h3>
+            <h5>Norman Lewis |  Goyal Publication | English</h5>
+            <button class="">Buy Now</button>
+            <button onclick="cart()" class="">Add to Cart</button>
+        </div>
+        <div class="modal-col2">
+          <h2>Description</h2>
+          <p>Very good book for everyone. This books helps alot to enhance english grammer. Buy this book to gain your knowledge and make a good grip over english vocabulary.</p>
+          <h2>Specification</h2>
+          <ul>
+            <li>Book - Word Power Made Easy</li>
+            <li>Author - Norman Lewis</li></li></li></li></li></li></li>
+            <li>Binding - Paperbook</li></li></li></li></li></li>
+            <li>Publishing Date - 2019</li></li></li></li></li>
+            <li>Publisher - Goyal Publication</li></li></li></li>
+            <li>Edition - 7</li></li></li>
+            <li>Number of Pages - 720</li></li>
+            <li>Language - English</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- HEADING -->
+    <center><h1 style="margin-bottom:-10px;">BOOKS SECTION</h1></center>
+
+
+    <!-- BOOKS CONTENTS -->
+    <section>
+      <div class="all-sports">
+        <div class="sp-rows">
+
+          <div class="sp-columns books">
+            <img src="images/books/books7.jpeg" alt="">
+            <h3>GEOGRAPHY OF INDIA</h3>
+            <h3>Price - ₹749</h3>
+            <h5>Majid Husain | McGraw Hill India | Geography</h5>
+            <button id="bmyBtn7" class="btn">Learn More</button>
+          </div>
+          
+
+          <div class="sp-columns books">
+            <img src="images/books/books6.jpeg" alt="">
+            <h3>ATTITUDE IS EVERYTHING</h3>
+            <h3>Price - ₹209</h3>
+            <h5>Jeff Keller | BPB House | Human Character</h5>
+            <button id="bmyBtn6" class="btn">Learn More</button>
+          </div>
+
+
+          <div class="sp-columns books">
+            <img src="images/books/books3.jpeg" alt="">
+            <h3>THE 5 AM CLUB</h3>
+            <h3>Price - ₹222</h3>
+            <h5>Robin Sharma | Jaico Publishing | Economics</h5>
+            <button id="bmyBtn3" class="btn">Learn More</button>
+          </div>
+
+          <div class="sp-columns books">
+            <img src="images/books/books4.jpeg" alt="">
+            <h3>MAKING OF ATOMMIC BOMB</h3>
+            <h3>Price - ₹999</h3>
+            <h5>Richard Rhodes | Simon & Schuster | History</h5>
+            <button id="bmyBtn4" class="btn">Learn More</button>
+          </div>
+
+          <div class="sp-columns books">
+            <img src="images/books/books5.jpeg" alt="">
+            <h3>LET US PYTHON</h3>
+            <h3>Price - ₹499</h3>
+            <h5>Kanetkar | BPB Publishers | Programming</h5>
+            <button id="bmyBtn5" class="btn">Learn More</button>
+          </div>
+
+          <div class="sp-columns books">
+            <img src="images/books/books8.jpeg" alt="">
+            <h3>WORD POWER MADE EASY</h3>
+            <h3>Price - ₹166</h3>
+            <h5>Norman Lewis | Goyal Publication | English</h5>
+            <button id="bmyBtn8" class="btn">Learn More</button>
+          </div>
+
+        
+
+          <div class="sp-columns books">
+            <img src="images/books/books1.jpeg" alt="">
+            <h3>HIMALAYAN BLUNDER</h3>
+            <h3>Price - ₹299</h3>
+            <h5>Brig J P Dalvi | Natraj Publishers | History</h5>
+            <button id="bmyBtn1" class="btn">Learn More</button>
+          </div>
+
+          
+          <div class="sp-columns books">
+            <img src="images/books/books2.jpeg" alt="">
+            <h3>PROGRAMMING WITH JAVA</h3>
+            <h3>Price - ₹470</h3>
+            <h5>Balagurusamy | McGraw Hill India | Programming</h5>
+            <button id="bmyBtn2" class="btn">Learn More</button>
+          </div>
+          
+          
+        </div>
+        
+      
+      </div>
+    </section>
+
+    <!-- BOOKS CONTENTS  ENDS-->
+
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <section>
+      <div class="footer">
+        Copyright © 2020 SPORTY-BOOKS Pvt Ltd , India . All rights Reserved <br>
+        mail us @ - contact@sportybooks.com <br>
+        call us at - (+91) 9563245116 <br>
+        <a href="#brand">Click Here</a> to go to top of this page
+      </div>
+    </section>
+  
+  <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<script>
+
+
+  
+  window.onclick = function(event) {
+  if (event.target == bmodal1) {
+    bmodal1.style.display = "none";
+  }
+  else if (event.target == bmodal2) {
+    bmodal2.style.display = "none";
+  }
+  else if (event.target == bmodal3) {
+    bmodal3.style.display = "none";
+  }
+  else if (event.target == bmodal4) {
+    bmodal4.style.display = "none";
+  }
+  else if (event.target == bmodal5) {
+    bmodal5.style.display = "none";
+  }
+  else if (event.target == bmodal6) {
+    bmodal6.style.display = "none";
+  }
+  else if (event.target == bmodal7) {
+    bmodal7.style.display = "none";
+  }
+  else if (event.target == bmodal8) {
+    bmodal8.style.display = "none";
+  }
+}
+
+
+
+
+var bmodal1 = document.getElementById("bmyModal1");
+var bbtn1 = document.getElementById("bmyBtn1");
+var bspan1 = document.getElementsByClassName("bclose1")[0];
+bbtn1.onclick = function() {
+  bmodal1.style.display = "block";
+}
+bspan1.onclick = function() {
+  bmodal1.style.display = "none";
+}
+
+
+
+
+
+var bmodal2 = document.getElementById("bmyModal2");
+var bbtn2 = document.getElementById("bmyBtn2");
+var bspan2 = document.getElementsByClassName("bclose2")[0];
+bbtn2.onclick = function() {
+  bmodal2.style.display = "block";
+}
+bspan2.onclick = function() {
+  bmodal2.style.display = "none";
+}
+
+
+
+
+
+var bmodal3 = document.getElementById("bmyModal3");
+var bbtn3 = document.getElementById("bmyBtn3");
+var bspan3 = document.getElementsByClassName("bclose3")[0];
+bbtn3.onclick = function() {
+  bmodal3.style.display = "block";
+}
+bspan3.onclick = function() {
+  bmodal3.style.display = "none";
+}
+
+
+
+
+
+
+var bmodal4 = document.getElementById("bmyModal4");
+var bbtn4 = document.getElementById("bmyBtn4");
+var bspan4 = document.getElementsByClassName("bclose4")[0];
+bbtn4.onclick = function() {
+  bmodal4.style.display = "block";
+}
+bspan4.onclick = function() {
+  bmodal4.style.display = "none";
+}
+
+
+
+var bmodal5 = document.getElementById("bmyModal5");
+var bbtn5 = document.getElementById("bmyBtn5");
+var bspan5 = document.getElementsByClassName("bclose5")[0];
+bbtn5.onclick = function() {
+  bmodal5.style.display = "block";
+}
+bspan5.onclick = function() {
+  bmodal5.style.display = "none";
+}
+
+
+
+
+
+
+
+
+var bmodal6 = document.getElementById("bmyModal6");
+var bbtn6 = document.getElementById("bmyBtn6");
+var bspan6 = document.getElementsByClassName("bclose6")[0];
+bbtn6.onclick = function() {
+  bmodal6.style.display = "block";
+}
+bspan6.onclick = function() {
+  bmodal6.style.display = "none";
+}
+
+
+
+
+
+
+var bmodal7 = document.getElementById("bmyModal7");
+var bbtn7 = document.getElementById("bmyBtn7");
+var bspan7 = document.getElementsByClassName("bclose7")[0];
+bbtn7.onclick = function() {
+  bmodal7.style.display = "block";
+}
+bspan7.onclick = function() {
+  bmodal7.style.display = "none";
+}
+
+
+
+
+
+
+
+
+var bmodal8 = document.getElementById("bmyModal8");
+var bbtn8 = document.getElementById("bmyBtn8");
+var bspan8 = document.getElementsByClassName("bclose8")[0];
+bbtn8.onclick = function() {
+  bmodal8.style.display = "block";
+}
+bspan8.onclick = function() {
+  bmodal8.style.display = "none";
+}
+
+
+
+
+
+</script>
