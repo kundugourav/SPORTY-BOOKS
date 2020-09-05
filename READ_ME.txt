@@ -1,4 +1,5 @@
 
+This website is not Responsive. It will be responsive shortly.
 
 1) Title of the Project : SPORTY-BOOKS ECOMMERCE
 2) Total number of main pages : 5 ( index.html , sports.html , books.html , about.html , contact.html )
@@ -51,3 +52,6 @@ contact.html page description -
   2) footer section is same as previous pages
   3) contains contact form and address of companies office
   4) contact form is validated by javascript and shows a popup when any field is empty
+  
+  
+  
